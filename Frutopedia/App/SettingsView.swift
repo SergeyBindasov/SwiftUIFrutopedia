@@ -15,7 +15,25 @@ struct SettingsView: View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 20) {
-                    Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                    // MARK: - Section 1
+                    GroupBox(label:
+                                SettingsLabelView(labelText: "Frutopedia", labelImage: "info.circle")
+                    )
+                    {
+                        Divider().padding(.vertical, 4)
+                        HStack(alignment: .center, spacing: 10) {
+                            Image("logo")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 80, height: 80)
+                            Text("Most fruits are naturally law in fat, sodium and calories. None have cholesterol. Fruits are sourses of many essential nutrients, including potassium, dietary fiber, vitamins and much more.")
+                                .font(.footnote)
+                        }
+                    }
+                    // MARK: - Section 2
+                    
+                    // MARK: - Section 3
+                    
                 }//: VSTACK
                 .navigationTitle("Settings")
                 .navigationBarTitleDisplayMode(.large)
