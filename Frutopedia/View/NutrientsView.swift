@@ -35,6 +35,7 @@ struct NutrientsView: View {
     }
 }
 //: NAVIGATION
+// MARK: - PREVIEW
 struct NutrientsView_Previews: PreviewProvider {
     static var previews: some View {
         NutrientsView(fruit: fruitsData[0])
